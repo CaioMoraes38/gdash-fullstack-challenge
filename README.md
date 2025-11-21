@@ -1,4 +1,4 @@
-🌦️ GDASH Challenge 2025/02 — Weather Intelligence Platform
+##🌦️ GDASH Challenge 2025/02 — Weather Intelligence Platform
 
 Uma plataforma full-stack completa para coleta, processamento, análise e visualização de dados climáticos em tempo real.
 O projeto integra múltiplas linguagens (Python, Go, TypeScript) e serviços orquestrados via Docker, seguindo uma arquitetura moderna orientada a eventos e microsserviços.
