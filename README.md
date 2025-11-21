@@ -170,7 +170,4 @@ Tipagem forte, testes fáceis e padrão corporativo escalável.
 
 Desenvolvido por Caio de Moraes Santos.
 
-]
 
-💻 GitHub: https://github.com/[SEU_USUARIO
-]
