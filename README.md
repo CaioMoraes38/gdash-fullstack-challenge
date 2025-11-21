@@ -3,7 +3,7 @@
 Uma plataforma full-stack completa para coleta, processamento, análise e visualização de dados climáticos em tempo real.
 O projeto integra múltiplas linguagens (Python, Go, TypeScript) e serviços orquestrados via Docker, seguindo uma arquitetura moderna orientada a eventos e microsserviços.
 
-🏗️ # Arquitetura e Pipeline de Dados
+🏗️ ## Arquitetura e Pipeline de Dados
 
 O sistema foi projetado com foco em desacoplamento, resiliência e escalabilidade:
 
@@ -29,12 +29,12 @@ Dashboard moderno para visualização dos dados em tempo real.
                                                                                      |
                                                                               [React Frontend]
 
-🚀 Tecnologias Utilizadas
-Infraestrutura
+🚀 ## Tecnologias Utilizadas
+## Infraestrutura
 
 Docker & Docker Compose
 
-Coleta de Dados
+## Coleta de Dados
 
 Python 3.10
 
@@ -44,13 +44,13 @@ Message Broker
 
 RabbitMQ (com painel administrativo)
 
-Worker
+## Worker
 
 Go 1.23
 
 AMQP 0.9.1
 
-Backend
+## Backend
 
 NestJS
 
@@ -60,7 +60,7 @@ Mongoose
 
 JWT
 
-Banco de Dados
+## Banco de Dados
 
 MongoDB
 
@@ -72,7 +72,7 @@ TailwindCSS
 
 shadcn/ui
 
-⚙️ Como Executar
+⚙️ ## Como Executar
 ✔️ Pré-requisitos
 
 Docker e Docker Compose instalados
@@ -132,7 +132,7 @@ cd weather-collector
 pip install -r requirements.txt
 python main.py
 
-🔌 Endpoints Principais (API)
+🔌## Endpoints Principais (API)
 Método	Endpoint	Descrição
 GET	/weather	Lista histórico climático
 POST	/weather	Recebe dados do worker (uso interno)
@@ -149,15 +149,15 @@ Alertas de baixa umidade ou calor extremo
 
 Cálculo de médias móveis para previsão de curto prazo
 
-📝 Decisões de Projeto
+📝## Decisões de Projeto
 
-Monorepo
+## Monorepo
 Simplifica execução e avaliação via Docker em um único comando.
 
-Worker em Go
+## Worker em Go
 Melhor desempenho para consumo de fila e validação em background.
 
-Backend em NestJS
+## Backend em NestJS
 Tipagem forte, testes fáceis e padrão corporativo escalável.
 
 👤 Autor
