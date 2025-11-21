@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: gdash_mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: CaioMoraes
+      MONGO_INITDB_ROOT_PASSWORD: caio1234
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - gdash_net
+
+  # --- Message Broker ---
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: gdash_rabbitmq
+    restart: always
+    ports:
+      - "5672:5672"   # Porta para comunicação (Python/Go usam essa)
+      - "15672:15672" # Interface Web de gerenciamento
+    environment:
+      RABBITMQ_DEFAULT_USER: CaioMoraes
+      RABBITMQ_DEFAULT_PASS: caio1234
+    networks:
+      - gdash_net
+
+# --- Redes e Volumes ---
+networks:
+  gdash_net:
+    driver: bridge
+
+volumes:
+  mongo_data:
