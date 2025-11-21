@@ -3,7 +3,7 @@
 Uma plataforma full-stack completa para coleta, processamento, análise e visualização de dados climáticos em tempo real.
 O projeto integra múltiplas linguagens (Python, Go, TypeScript) e serviços orquestrados via Docker, seguindo uma arquitetura moderna orientada a eventos e microsserviços.
 
-## 🏗️  Arquitetura e Pipeline de Dados
+## 🏗️ Arquitetura e Pipeline de Dados
 
 O sistema foi projetado com foco em desacoplamento, resiliência e escalabilidade:
 
